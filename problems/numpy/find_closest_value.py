@@ -13,7 +13,9 @@ def find_closest_value(x):
     
     # YOUR CODE HERE
     # Replace None with an appropriate return value
-    return None
+    mean = np.mean(x)
+    indx = np.argmin(np.abs(x - mean))
+    return indx, x[indx]
     
 
 #############################################################

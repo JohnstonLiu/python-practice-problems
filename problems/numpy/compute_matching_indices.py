@@ -11,7 +11,8 @@ def compute_matching_indices(x, y):
 
     # YOUR CODE HERE
     # Replace None with an appropriate return value
-    return None
+    match = x == y
+    return np.sort(np.arange(len(match))[match == True])
     
 
 #############################################################
